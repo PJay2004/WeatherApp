@@ -14,7 +14,7 @@ function App() {
   }, [city]);
 
   const fetchAirQualityData = (lat, lon) => {
-    const API_KEY = "06a6c752587c3649346534946080afc5";
+    const API_KEY = "URAPIKEY";
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
@@ -28,7 +28,7 @@ function App() {
   };
 
   const fetchweatherData = () => {
-    const API_KEY = "06a6c752587c3649346534946080afc5";
+    const API_KEY = "URAPIKEY";
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
     )
